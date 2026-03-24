@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Music Discovery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AI Music Discovery 🎵</h1>
+    <div id="auth-section">
+        <a href="/login" class="button">Inloggen met Spotify</a>
+    </div>
+    <div id="search-section" style="display:none;">
+        <!-- De Chat History container -->
+        <div id="chat-container">
+            <div id="chat-messages">
+                <!-- Hier verschijnen de tekstwolkjes -->
+            </div>
+        </div>
+
+        <!-- De Input groep onderaan -->
+        <div class="input-group">
+            <input type="text" id="userInput" placeholder="Wat wil je horen?">
+            <button class="button" onclick="search()">Verstuur</button>
+            <button class="button reset-btn" onclick="resetChat()" title="Wis gesprek">↺</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
